@@ -1,12 +1,16 @@
-﻿namespace Weekday
-
-public enum Weekday
+﻿namespace Programming2
 {
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Saturday,
-    Sunday
+    public class Weekday
+    {
+        public enum Weekday1
+        {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday
+        }
+    }
 }
