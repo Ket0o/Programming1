@@ -1,4 +1,4 @@
-﻿namespace Programming.Model
+﻿namespace Programming2
 {
     partial class MainForm
     {
@@ -111,6 +111,7 @@
             this.ValuesListBox.Name = "ValuesListBox";
             this.ValuesListBox.Size = new System.Drawing.Size(225, 279);
             this.ValuesListBox.TabIndex = 3;
+            this.ValuesListBox.SelectedIndexChanged += new System.EventHandler(this.ValuesListBox_SelectedIndexChanged);
             // 
             // label1
             // 

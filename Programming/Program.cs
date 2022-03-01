@@ -1,4 +1,4 @@
-namespace Programming.Model
+namespace Programming2
 {
     internal static class Program
     {

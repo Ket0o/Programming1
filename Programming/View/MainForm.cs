@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace Programming.Model
+namespace Programming2
 {
     public partial class MainForm : Form
     {
@@ -17,9 +17,9 @@ namespace Programming.Model
         {
             InitializeComponent();
 
-            for(int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                EnumsListBox.Items.Add((Enums.Enums)i);
+                EnumsListBox.Items.Add((Programming2.Enums.Enums1)i);
             }
 
             EnumsListBox.SetSelected(0, true);
@@ -31,55 +31,61 @@ namespace Programming.Model
             Array enumValues;
             switch (EnumsListBox.SelectedItem)
             {
-                case Enums.Enums.Colors:
-                    enumValues = Enum.GetValues(typeof(Colors.Colors));
-                    foreach (Colors.Colors value in enumValues)
+                case Enums.Enums1.Colors:
+                    enumValues = Enum.GetValues(typeof(Colors.Colors1));
+                    foreach (Colors.Colors1 value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums.Weekday:
-                    enumValues = Enum.GetValues(typeof(Weekday.Weekday));
-                    foreach (Weekday.Weekday value in enumValues)
+                case Enums.Enums1.Weekday:
+                    enumValues = Enum.GetValues(typeof(Weekday.Weekday1));
+                    foreach (Weekday.Weekday1 value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums.Season:
-                    enumValues = Enum.GetValues(typeof(Season.Season));
-                    foreach (Season.Season value in enumValues)
+                case Enums.Enums1.Season:
+                    enumValues = Enum.GetValues(typeof(Season.Season1));
+                    foreach (Season.Season1 value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums.Manufactures:
-                    enumValues = Enum.GetValues(typeof(Manufactures.Manufactures));
-                    foreach (Manufactures.Manufactures value in enumValues)
+                case Enums.Enums1.Manufactures:
+                    enumValues = Enum.GetValues(typeof(Manufactures.Manufactures1));
+                    foreach (Manufactures.Manufactures1 value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums.Genre:
-                    enumValues = Enum.GetValues(typeof(Genre.Genre));
-                    foreach (Genre.Genre value in enumValues)
+                case Enums.Enums1.Genre:
+                    enumValues = Enum.GetValues(typeof(Genre.Genre1));
+                    foreach (Genre.Genre1 value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums.EducationForm:
-                    enumValues = Enum.GetValues(typeof(EducationForm.EducationForm));
-                    foreach (EducationForm.EducationForm value in enumValues)
+                case Enums.Enums1.EducationForm:
+                    enumValues = Enum.GetValues(typeof(EducationForm.EducationForm1));
+                    foreach (EducationForm.EducationForm1 value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
+            
             }
+        }
+
+        private void ValuesListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

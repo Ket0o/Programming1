@@ -1,12 +1,15 @@
-﻿namespace Enums
+﻿namespace Programming2
 {
-    public enum Enums
+    public class Enums
     {
-        Colors,
-        EducationForm,
-        Genre,
-        Manufactures,
-        Season,
-        Weekday
+        public enum Enums1
+        {
+            Colors,
+            EducationForm,
+            Genre,
+            Manufactures,
+            Season,
+            Weekday
+        }
     }
 }

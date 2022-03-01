@@ -1,12 +1,15 @@
-﻿namespace Manufactures
+﻿namespace Programming2
 {
-    public enum Manufactures
+    public class Manufactures
     {
-        Apple,
-        Samsung,
-        Xiaomi,
-        Oppo,
-        Vivo,
-        Huawei
+        public enum Manufactures1
+        {
+            Apple,
+            Samsung,
+            Xiaomi,
+            Oppo,
+            Vivo,
+            Huawei
+        }
     }
 }

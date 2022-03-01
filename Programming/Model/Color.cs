@@ -1,12 +1,15 @@
-﻿namespace Colors
+﻿namespace Programming2
 {
-    public enum Colors
+    public class Colors
     {
-        Red,
-        Green,
-        Gray,
-        Yellow,
-        Orange,
-        Blue
+        public enum Colors1
+        {
+            Red,
+            Green,
+            Gray,
+            Yellow,
+            Orange,
+            Blue
+        }
     }
 }
