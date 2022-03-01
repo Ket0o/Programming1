@@ -85,7 +85,8 @@ namespace Programming2
 
         private void ValuesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            var item = ValuesListBox.SelectedItem;
+            textBox1.Text = ((int)item).ToString();
         }
     }
 }
