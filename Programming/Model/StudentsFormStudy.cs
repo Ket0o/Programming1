@@ -1,13 +1,10 @@
-﻿namespace Programming2
+﻿namespace EducationForm
 {
-    public class EducationForm
+    public enum EducationForm
     {
-        public enum EducationForm1
-        {
-            Fulltime,
-            Parttime,
-            Evening,
-            Distances
-        }
+        Fulltime,
+        Parttime,
+        Evening,
+        Distances
     }
 }

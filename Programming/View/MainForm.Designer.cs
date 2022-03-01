@@ -1,4 +1,4 @@
-﻿namespace Programming
+﻿namespace Programming.Model
 {
     partial class MainForm
     {
@@ -31,6 +31,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Enums_tabPage = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ValuesListBox = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.EnumsListBox = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.Enums_tabPage.SuspendLayout();
@@ -60,6 +65,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.ValuesListBox);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.EnumsListBox);
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -68,14 +78,58 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enumerations";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(520, 55);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(150, 31);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(520, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 25);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Int value:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(262, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(122, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Choose value:";
+            // 
+            // ValuesListBox
+            // 
+            this.ValuesListBox.FormattingEnabled = true;
+            this.ValuesListBox.ItemHeight = 25;
+            this.ValuesListBox.Location = new System.Drawing.Point(262, 55);
+            this.ValuesListBox.Name = "ValuesListBox";
+            this.ValuesListBox.Size = new System.Drawing.Size(225, 279);
+            this.ValuesListBox.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Choose enumerations:";
+            // 
             // EnumsListBox
             // 
             this.EnumsListBox.FormattingEnabled = true;
             this.EnumsListBox.ItemHeight = 25;
-            this.EnumsListBox.Location = new System.Drawing.Point(8, 53);
+            this.EnumsListBox.Location = new System.Drawing.Point(6, 55);
             this.EnumsListBox.Name = "EnumsListBox";
-            this.EnumsListBox.Size = new System.Drawing.Size(180, 204);
+            this.EnumsListBox.Size = new System.Drawing.Size(225, 279);
             this.EnumsListBox.TabIndex = 1;
+            this.EnumsListBox.SelectedIndexChanged += new System.EventHandler(this.EnumsListBox_SelectedIndexChanged);
             // 
             // MainForm
             // 
@@ -88,6 +142,7 @@
             this.tabControl1.ResumeLayout(false);
             this.Enums_tabPage.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -98,5 +153,10 @@
         private TabPage Enums_tabPage;
         private GroupBox groupBox1;
         private ListBox EnumsListBox;
+        private TextBox textBox1;
+        private Label label3;
+        private Label label2;
+        private ListBox ValuesListBox;
+        private Label label1;
     }
 }

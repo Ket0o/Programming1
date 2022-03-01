@@ -1,15 +1,12 @@
-﻿namespace Programming2
+﻿namespace Genre
 {
-    public class Genre
+    public enum Genre
     {
-        public enum Genre1
-        {
-            Comedy,
-            Drama,
-            Triller,
-            Fighter,
-            Horrors,
-            Blockbuster
-        }
+        Comedy,
+        Drama,
+        Triller,
+        Fighter,
+        Horrors,
+        Blockbuster
     }
 }
