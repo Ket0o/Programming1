@@ -88,5 +88,40 @@ namespace Programming2
             var item = ValuesListBox.SelectedItem;
             textBox1.Text = ((int)item).ToString();
         }
+
+        private void ParseWeekdayButton_Click(object sender, EventArgs e)
+        {
+            string textWeekdayTextBox = WeekdayTextBox.Text;
+            Weekday.Weekday1 value;
+            if (Enum.TryParse(textWeekdayTextBox, out value))
+            {
+                OutputWeekdayLabel.Text = $"Это день недели ({value} - {(int)value + 1})";
+            }
+            else
+            {
+                OutputWeekdayLabel.Text = "Нет такого дня недели";
+            }
+        }
+
+        private void GoButton_Click(object sender, EventArgs e)
+        {
+            switch (SeasonNamesComboBox.SelectedItem)
+            {
+                case Season.Season1.Winter:
+                    this.BackColor = DefaultBackColor;
+                    MessageBox.Show("Бррр! Холодно!");
+                    break;
+                case Season.Season1.Summer:
+                    this.BackColor = DefaultBackColor;
+                    MessageBox.Show("Ура! Солнце!");
+                    break;
+                case Season.Season1.Spring:
+                    this.BackColor = ColorTranslator.FromHtml("#559c45");
+                    break;
+                case Season.Season1.Autumn:
+                    this.BackColor = ColorTranslator.FromHtml("#e29c45");
+                    break;
+            }
+        }
     }
 }
