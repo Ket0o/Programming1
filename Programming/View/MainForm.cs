@@ -23,6 +23,14 @@ namespace Programming2
             }
 
             EnumsListBox.SetSelected(0, true);
+
+            for (int i = 0; i < 4; i++)
+            {
+                SeasonNamesComboBox.Items.Add((Programming2.Season.Season1)i);
+            }
+
+            SeasonNamesComboBox.SelectedIndex = 0;
+
         }
 
         private void EnumsListBox_SelectedIndexChanged(object sender, EventArgs e)
