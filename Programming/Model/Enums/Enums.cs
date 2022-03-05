@@ -1,15 +1,12 @@
-﻿namespace Programming2
+﻿namespace Programming2.Model
 {
-    public class Enums
+    public enum Enums
     {
-        public enum Enums1
-        {
-            Colors,
-            EducationForm,
-            Genre,
-            Manufactures,
-            Season,
-            Weekday
-        }
+        Colors,
+        EducationForm,
+        Genre,
+        Manufactures,
+        Season,
+        Weekday
     }
 }

@@ -1,13 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+using Programming2.Model;
 
 namespace Programming2
 {
@@ -17,8 +8,8 @@ namespace Programming2
         {
             InitializeComponent();
 
-            Array initValues = System.Enum.GetValues(typeof(Enums.Enums1));
-            foreach (Enums.Enums1 value in initValues)
+            Array initValues = System.Enum.GetValues(typeof(Enums));
+            foreach (Enums value in initValues)
             {
                 EnumsListBox.Items.Add(value);
             }
@@ -26,8 +17,8 @@ namespace Programming2
 
             EnumsListBox.SelectedIndex = 0;
 
-            Array initSeasonValues = System.Enum.GetValues(typeof(Season.Season1));
-            foreach (Season.Season1 value in initSeasonValues)
+            Array initSeasonValues = System.Enum.GetValues(typeof(Season));
+            foreach (Season value in initSeasonValues)
             {
                 SeasonNamesComboBox.Items.Add(value);
             }
@@ -43,49 +34,49 @@ namespace Programming2
             Array enumValues;
             switch (EnumsListBox.SelectedItem)
             {
-                case Enums.Enums1.Colors:
-                    enumValues = Enum.GetValues(typeof(Colors.Colors1));
-                    foreach (Colors.Colors1 value in enumValues)
+                case Enums.Colors:
+                    enumValues = Enum.GetValues(typeof(Colors));
+                    foreach (Colors value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums1.Weekday:
-                    enumValues = Enum.GetValues(typeof(Weekday.Weekday1));
-                    foreach (Weekday.Weekday1 value in enumValues)
+                case Enums.Weekday:
+                    enumValues = Enum.GetValues(typeof(Weekday));
+                    foreach (Weekday value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums1.Season:
-                    enumValues = Enum.GetValues(typeof(Season.Season1));
-                    foreach (Season.Season1 value in enumValues)
+                case Enums.Season:
+                    enumValues = Enum.GetValues(typeof(Season));
+                    foreach (Season value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums1.Manufactures:
-                    enumValues = Enum.GetValues(typeof(Manufactures.Manufactures1));
-                    foreach (Manufactures.Manufactures1 value in enumValues)
+                case Enums.Manufactures:
+                    enumValues = Enum.GetValues(typeof(Manufactures));
+                    foreach (Manufactures value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums1.Genre:
-                    enumValues = Enum.GetValues(typeof(Genre.Genre1));
-                    foreach (Genre.Genre1 value in enumValues)
+                case Enums.Genre:
+                    enumValues = Enum.GetValues(typeof(Genre));
+                    foreach (Genre value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
 
                     break;
-                case Enums.Enums1.EducationForm:
-                    enumValues = Enum.GetValues(typeof(EducationForm.EducationForm1));
-                    foreach (EducationForm.EducationForm1 value in enumValues)
+                case Enums.EducationForm:
+                    enumValues = Enum.GetValues(typeof(EducationForm));
+                    foreach (EducationForm value in enumValues)
                     {
                         ValuesListBox.Items.Add(value);
                     }
@@ -104,10 +95,10 @@ namespace Programming2
         private void ParseWeekdayButton_Click(object sender, EventArgs e)
         {
             string textWeekdayTextBox = WeekdayTextBox.Text;
-            Weekday.Weekday1 value;
+            Weekday value;
             if (Enum.TryParse(textWeekdayTextBox, out value))
             {
-                OutputWeekdayLabel.Text = $"Это день недели ({value} - {(int)value + 1})";
+                OutputWeekdayLabel.Text = $"Это день недели ({value} - {(int)value})"; //Change +1 => 0
             }
             else
             {
@@ -119,18 +110,18 @@ namespace Programming2
         {
             switch (SeasonNamesComboBox.SelectedItem)
             {
-                case Season.Season1.Winter:
+                case Season.Winter:
                     this.BackColor = DefaultBackColor;
                     MessageBox.Show("Бррр! Холодно!");
                     break;
-                case Season.Season1.Summer:
+                case Season.Summer:
                     this.BackColor = DefaultBackColor;
                     MessageBox.Show("Ура! Солнце!");
                     break;
-                case Season.Season1.Spring:
+                case Season.Spring:
                     this.BackColor = ColorTranslator.FromHtml("#559c45");
                     break;
-                case Season.Season1.Autumn:
+                case Season.Autumn:
                     this.BackColor = ColorTranslator.FromHtml("#e29c45");
                     break;
             }

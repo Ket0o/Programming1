@@ -1,13 +1,10 @@
-﻿namespace Programming2
+﻿namespace Programming2.Model
 {
-    public class Season
+    public enum Season
     {
-        public enum Season1
-        {
-            Winter,
-            Summer,
-            Autumn,
-            Spring
-        }
+        Winter,
+        Summer,
+        Autumn,
+        Spring
     }
 }
