@@ -36,52 +36,28 @@ namespace Programming
             {
                 case Enums.Colors:
                     enumValues = Enum.GetValues(typeof(Colors));
-                    //foreach (Colors value in enumValues)
-                    //{
-                    //    ValuesListBox.Items.Add(value);
-                    //}
-
                     break;
+
                 case Enums.Weekday:
                     enumValues = Enum.GetValues(typeof(Weekday));
-                    //foreach (Weekday value in enumValues)
-                    //{
-                    //    ValuesListBox.Items.Add(value);
-                    //}
-
                     break;
+
                 case Enums.Season:
                     enumValues = Enum.GetValues(typeof(Season));
-                    //foreach (Season value in enumValues)
-                    //{
-                    //    ValuesListBox.Items.Add(value);
-                    //}
-
                     break;
+
                 case Enums.Manufactures:
                     enumValues = Enum.GetValues(typeof(Manufactures));
-                    //foreach (Manufactures value in enumValues)
-                    //{
-                    //    ValuesListBox.Items.Add(value);
-                    //}
-
                     break;
+
                 case Enums.Genre:
                     enumValues = Enum.GetValues(typeof(Genre));
-                    //foreach (Genre value in enumValues)
-                    //{
-                    //    ValuesListBox.Items.Add(value);
-                    //}
-
                     break;
+
                 case Enums.EducationForm:
                     enumValues = Enum.GetValues(typeof(EducationForm));
-                    //foreach (EducationForm value in enumValues)
-                    //{
-                    //    ValuesListBox.Items.Add(value);
-                    //}
-
                     break;
+
                 default:
                     throw new NotImplementedException();
 
