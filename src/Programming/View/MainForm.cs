@@ -18,8 +18,8 @@ namespace Programming.View
 
             EnumsListBox.SelectedIndex = 0;
 
-            Array typeSeasonValues = System.Enum.GetValues(typeof(Season));
-            foreach (Season value in typeSeasonValues)
+            Array SeasonValues = System.Enum.GetValues(typeof(Season));
+            foreach (Season value in SeasonValues)
             {
                 SeasonNamesComboBox.Items.Add(value);
             }

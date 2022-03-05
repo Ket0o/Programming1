@@ -82,9 +82,9 @@
             this.SeasonNamesGroupBox.Controls.Add(this.SeasonNamesComboBox);
             this.SeasonNamesGroupBox.Controls.Add(this.GoButton);
             this.SeasonNamesGroupBox.Controls.Add(this.label6);
-            this.SeasonNamesGroupBox.Location = new System.Drawing.Point(493, 418);
+            this.SeasonNamesGroupBox.Location = new System.Drawing.Point(496, 418);
             this.SeasonNamesGroupBox.Name = "SeasonNamesGroupBox";
-            this.SeasonNamesGroupBox.Size = new System.Drawing.Size(521, 223);
+            this.SeasonNamesGroupBox.Size = new System.Drawing.Size(518, 215);
             this.SeasonNamesGroupBox.TabIndex = 10;
             this.SeasonNamesGroupBox.TabStop = false;
             this.SeasonNamesGroupBox.Text = "Season Handle";
@@ -122,7 +122,7 @@
             this.groupBox2.Controls.Add(this.ParseWeekdayButton);
             this.groupBox2.Controls.Add(this.WeekdayTextBox);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(0, 418);
+            this.groupBox2.Location = new System.Drawing.Point(3, 418);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(487, 215);
             this.groupBox2.TabIndex = 1;
@@ -171,7 +171,7 @@
             this.groupBox1.Controls.Add(this.ValuesListBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.EnumsListBox);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(3, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1014, 412);
             this.groupBox1.TabIndex = 0;
@@ -218,9 +218,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 25);
+            this.label1.Size = new System.Drawing.Size(181, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Choose enumerations:";
+            this.label1.Text = "Choose enumeration:";
             // 
             // EnumsListBox
             // 
