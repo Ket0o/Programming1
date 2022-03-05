@@ -9,8 +9,8 @@ namespace Programming
         {
             InitializeComponent();
 
-            Array initValues = System.Enum.GetValues(typeof(Enums));
-            foreach (Enums value in initValues)
+            Array typeValues = System.Enum.GetValues(typeof(Enums));
+            foreach (Enums value in typeValues)
             {
                 EnumsListBox.Items.Add(value);
             }
@@ -18,8 +18,8 @@ namespace Programming
 
             EnumsListBox.SelectedIndex = 0;
 
-            Array initSeasonValues = System.Enum.GetValues(typeof(Season));
-            foreach (Season value in initSeasonValues)
+            Array typeSeasonValues = System.Enum.GetValues(typeof(Season));
+            foreach (Season value in typeSeasonValues)
             {
                 SeasonNamesComboBox.Items.Add(value);
             }
