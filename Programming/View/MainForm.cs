@@ -17,17 +17,21 @@ namespace Programming2
         {
             InitializeComponent();
 
-            for (int i = 0; i < 6; i++)
+            Array initValues = System.Enum.GetValues(typeof(Enums.Enums1));
+            foreach (Enums.Enums1 value in initValues)
             {
-                EnumsListBox.Items.Add((Programming2.Enums.Enums1)i);
+                EnumsListBox.Items.Add(value);
             }
+            
 
-            EnumsListBox.SetSelected(0, true);
+            EnumsListBox.SelectedIndex = 0;
 
-            for (int i = 0; i < 4; i++)
+            Array initSeasonValues = System.Enum.GetValues(typeof(Season.Season1));
+            foreach (Season.Season1 value in initSeasonValues)
             {
-                SeasonNamesComboBox.Items.Add((Programming2.Season.Season1)i);
+                SeasonNamesComboBox.Items.Add(value);
             }
+            
 
             SeasonNamesComboBox.SelectedIndex = 0;
 

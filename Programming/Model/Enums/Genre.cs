@@ -6,7 +6,7 @@
         {
             Comedy,
             Drama,
-            Triller,
+            Thriller,
             Fighter,
             Horrors,
             Blockbuster
