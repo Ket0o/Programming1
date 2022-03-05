@@ -1,4 +1,4 @@
-﻿namespace Programming2
+﻿namespace Programming
 {
     partial class MainForm
     {
@@ -92,7 +92,7 @@
             // SeasonNamesComboBox
             // 
             this.SeasonNamesComboBox.FormattingEnabled = true;
-            this.SeasonNamesComboBox.Location = new System.Drawing.Point(8, 57);
+            this.SeasonNamesComboBox.Location = new System.Drawing.Point(6, 57);
             this.SeasonNamesComboBox.Name = "SeasonNamesComboBox";
             this.SeasonNamesComboBox.Size = new System.Drawing.Size(323, 33);
             this.SeasonNamesComboBox.TabIndex = 10;
@@ -180,15 +180,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(520, 55);
+            this.textBox1.Location = new System.Drawing.Point(516, 55);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 31);
+            this.textBox1.Size = new System.Drawing.Size(225, 31);
             this.textBox1.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(520, 27);
+            this.label3.Location = new System.Drawing.Point(516, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 25);
             this.label3.TabIndex = 5;
@@ -216,7 +216,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Location = new System.Drawing.Point(8, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 2;

@@ -1,6 +1,6 @@
-using Programming2.Model;
+using Programming.Model;
 
-namespace Programming2
+namespace Programming
 {
     public partial class MainForm : Form
     {
