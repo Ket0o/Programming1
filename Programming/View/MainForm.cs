@@ -1,7 +1,7 @@
 using Programming.Model.Enums;
 using Programming.View;
 
-namespace Programming
+namespace Programming.View
 {
     public partial class MainForm : Form
     {

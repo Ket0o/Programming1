@@ -1,3 +1,5 @@
+using Programming.View;
+
 namespace Programming
 {
     internal static class Program
