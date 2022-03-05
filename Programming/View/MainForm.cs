@@ -1,4 +1,4 @@
-using Programming.Model;
+using Programming.Model.Enums;
 using Programming.View;
 
 namespace Programming

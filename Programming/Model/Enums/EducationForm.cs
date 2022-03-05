@@ -1,5 +1,5 @@
-﻿namespace Programming.Model
-{
+﻿namespace Programming.Model.Enums
+
     public enum EducationForm
     {
         Fulltime,
