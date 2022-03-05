@@ -81,7 +81,7 @@ namespace Programming
             Weekday value;
             if (Enum.TryParse(textWeekdayTextBox, out value))
             {
-                OutputWeekdayLabel.Text = $"Это день недели ({value} - {(int)value})"; //Change +1 => 0
+                OutputWeekdayLabel.Text = $"Это день недели ({value} - {(int)value})"; 
             }
             else
             {
